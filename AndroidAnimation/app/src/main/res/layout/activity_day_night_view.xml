@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff6495ed">
+
+    <ImageView android:visibility="invisible"
+        android:id="@+id/sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingTop="45dp"
+        android:src="@drawable/sunshape" />
+
+    <ImageView android:visibility="invisible"
+        android:id="@+id/moon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingTop="45dp"
+        android:src="@drawable/moon"
+        android:layout_alignParentRight="true" />
+
+    <ImageView android:id="@+id/cloud1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="170dp"
+        android:paddingTop="70dp"
+        android:src="@drawable/cloud" />
+
+    <ImageView android:id="@+id/cloud2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="200dp"
+        android:paddingTop="90dp"
+        android:src="@drawable/cloud" />
+
+    <ImageView android:id="@+id/cloud3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="230dp"
+        android:paddingTop="50dp"
+        android:src="@drawable/cloud" />
+
+    <ImageView android:id="@+id/ground"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/grass"
+        android:layout_alignParentRight="false" />
+
+    <Button android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Day View" />
+
+    <Button android:id="@+id/mainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Main Page"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button android:text="Night View"
+        android:id="@+id/night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
